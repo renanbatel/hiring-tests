@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "project to petlove",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm install && node app.js"
+  },
+  "author": "Wilton Felix",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
