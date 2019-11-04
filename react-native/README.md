@@ -42,7 +42,7 @@ O aplicativo deve ser capaz de:
 ### Sugestão de layout base
 
 ## iOS
-http://i.imgur.com/6G7FW3l.jpg
+[![ios](http://i.imgur.com/6G7FW3l.jpg)](http://i.imgur.com/6G7FW3l)
 
 ## Android
-http://i.imgur.com/XaY0E20.png
+[![android](http://i.imgur.com/XaY0E20.png)](http://i.imgur.com/XaY0E20)
