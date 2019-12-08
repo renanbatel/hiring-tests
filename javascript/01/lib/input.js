@@ -6,7 +6,7 @@ const rl = {
 
 /**
  * Opens the input interface
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const open = () => {
@@ -20,7 +20,7 @@ const open = () => {
 
 /**
  * Closes the input interface
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const close = () => {
@@ -31,19 +31,17 @@ const close = () => {
 
 /**
  * Gets the terminal input line.
- * 
+ *
  * @param {string} label Text to show before the input.
  * @returns {Promise}
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
-const getLine = (label = "") => {
-  return new Promise((resolve) => {
-    rl.interface.question(label, (value) => {
-      resolve(value)
-    })
+const getLine = (label = "") => new Promise((resolve) => {
+  rl.interface.question(label, (value) => {
+    resolve(value)
   })
-}
+})
 
 module.exports = {
   open,

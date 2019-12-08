@@ -3,22 +3,22 @@ const utils = require("./lib/utils")
 
 /**
  * Check if it's a valid ticket number
- * 
+ *
  * @param {number} number The ticket number
  * @returns {boolean}
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
-const isValidTicketNumber = (number) => !(number.length % 2) 
-  && number.length >= 10 
+const isValidTicketNumber = (number) => !(number.length % 2)
+  && number.length >= 10
   && number.length < 106
 
 /**
  * Check if it's a lucky ticket number
- * 
+ *
  * @param {number} number The ticket number
  * @returns {boolean}
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const isLuckyTicketNumber = (number) => {

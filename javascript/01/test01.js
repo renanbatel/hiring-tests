@@ -3,23 +3,20 @@ const utils = require("./lib/utils")
 
 /**
  * Check if the string is valid for calculation
- * 
+ *
  * @param {string} string The string
  * @returns {boolean}
- * 
+ *
  * @author Renan Batel Rodrigues <renanabtel@gmail.com>
  */
-const isValidString = (string) => {
-
-  return /^[a-z]{1,15}$/.test(string)
-}
+const isValidString = (string) => /^[a-z]{1,15}$/.test(string)
 
 /**
  * Get the occurrence number of each character
- * 
+ *
  * @param {string} string
  * @returns {Array}
- * 
+ *
  * @author Renan Batel Rodrigues <renanabtel@gmail.com>
  */
 const countCharacters = (string) => string
@@ -32,11 +29,11 @@ const countCharacters = (string) => string
 
 /**
  * Get the number of common characters between two strings
- * 
- * @param {string} s1 
- * @param {string} s2 
+ *
+ * @param {string} s1
+ * @param {string} s2
  * @returns {number} The number of common characters
- * 
+ *
  * @author Renan Batel Rodrigues <renanabtel@gmail.com>
  */
 const countCommonCharacters = (s1, s2) => {
@@ -55,7 +52,7 @@ const countCommonCharacters = (s1, s2) => {
 
 (async () => {
   input.open()
-  
+
   const s1 = await input.getLine("String 1: ")
   const s2 = await input.getLine("String 2: ")
   const timer = utils.getTimer("Finished in")
@@ -71,5 +68,5 @@ const countCommonCharacters = (s1, s2) => {
     console.log("Your strings aren't valid, please try again.\n")
   }
 
-  timer.end()  
+  timer.end()
 })()

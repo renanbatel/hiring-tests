@@ -3,31 +3,31 @@ const utils = require("./lib/utils")
 
 /**
  * Check if it's a valid hour value
- * 
- * @param {number} hour 
+ *
+ * @param {number} hour
  * @returns {boolean}
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const isValidHour = (hour) => hour > 0 && hour <= 12
 
 /**
  * Check if it's a valid minute value
- * 
- * @param {number} minute 
+ *
+ * @param {number} minute
  * @returns {boolean}
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const isValidMinute = (minute) => minute >= 0 && minute <= 60
 
 /**
  * Gets the angle between hour and minute hands
- * 
- * @param {number} hour 
+ *
+ * @param {number} hour
  * @param {number} minute
  * @returns {number} The angle
- * 
+ *
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
 const getAngle = (hour, minute) => {
@@ -57,6 +57,6 @@ const getAngle = (hour, minute) => {
   } else {
     console.log("Your hour or minute values aren't valid, please try again.\n")
   }
-  
+
   timer.end()
 })()
