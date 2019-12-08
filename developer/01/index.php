@@ -25,8 +25,7 @@ fclose($stdin);
  */
 function isValidMatrix(int $n, int $m, array $matrix): bool {
     if ($n > 0 && $n < 10 && $m > 0 && $m < 10 && count($matrix) === $n) {
-
-        return array_reduce($matrix, function($carry, $row) use ($m) {
+        return array_reduce($matrix, function ($carry, $row) use ($m) {
 
             return $carry && count($row) === $m;
         }, true);
@@ -63,7 +62,7 @@ function isRegionCell(array $matrix, int $rowKey, int $cellKey): bool {
  * 
  * @author Renan Batel Rodrigues <renanbatel@gmail.com>
  */
-function discoverRegion(array &$matrix, int $rowKey,int $cellKey, int $regionNumber): int {
+function discoverRegion(array &$matrix, int $rowKey, int $cellKey, int $regionNumber): int {
     $neighborCoordinates = [
         [ $rowKey, $cellKey + 1 ], // right
         [ $rowKey + 1, $cellKey + 1 ], // bottom-right
